@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: black;
+  background: white;
+}
+
+.customSelect {
+  background: #FFFFFF;
+  outline: none;
+  /* Shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 10px rgba(124, 141, 181, 0.12);
+  border-radius: 8px;
+  padding: 4px 8px 4px 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.reporting-icons {
+  border-radius: 12px;
+  background: var(--Gray-400, #FFF);
+  /* Shadow */
+  box-shadow: 0px 2px 10px 0px rgba(124, 141, 181, 0.12);
+}
+
+.reporting-card {
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 3.90195px 9.75486px 0px rgba(80, 80, 80, 0.05);
+}
+
+.parameter-button {
+  border-radius: 8px;
+  background: #1D51AB;
+
+  /* Shadow */
+  box-shadow: 0px 2px 10px 0px rgba(124, 141, 181, 0.12);
+}
+
+.parameter-input {
+  border-radius: 8px;
+  background: var(--Gray-400, #FFF);
+  /* Shadow */
+  box-shadow: 0px 2px 10px 0px rgba(124, 141, 181, 0.12);
+  outline: none;
+}
+
+.chart {
+  box-shadow: 0px 4px 10px 0px rgba(80, 80, 80, 0.05);
+}
